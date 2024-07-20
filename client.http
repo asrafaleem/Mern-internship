@@ -1,0 +1,36 @@
+GET http://localhost:1100/
+
+###
+POST http://localhost:1100/include
+Content-Type: application/json
+
+{
+    "projectorId":76766767,
+    "projectorName":"Zebronics",
+    "projectorPrice":12000
+}
+
+###
+PUT http://localhost:1100/change/1
+Content-Type: application/json
+
+{
+    "projectorId":11111,
+    "projectorName":"MediaTek",
+    "projectorPrice":9000
+}
+
+
+###
+PUT http://localhost:1100/replace
+Content-Type: application/json
+
+{
+    "projectorId":7654678,
+    "projectorName":"Epson",
+    "projectorPrice":1000000
+}
+
+###
+
+DELETE http://localhost:1100/remove/1

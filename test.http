@@ -1,0 +1,24 @@
+###
+GET  http://localhost:1234/
+
+###
+POST http://localhost:1234/insert
+Content-Type: application/json
+
+{
+    "username": "Ash A",
+    "password": "12345",
+    "fullname": "Asraf Aleem",
+    "accountno": 1233,
+    "accountbal": 0
+}
+### 
+DELETE http://localhost:1234/delete/1233
+
+###
+PUT http://localhost:1234/update/1233
+Content-Type: application/json
+
+{
+    "accountbal": 50
+}
